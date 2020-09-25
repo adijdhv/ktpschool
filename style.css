@@ -1,0 +1,71 @@
+ 
+ 
+
+#hold{
+    height:100vh;
+    width:100%;
+    display:flex;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    
+}
+
+#hold::after{
+    width:100%;
+    height: 100%;
+    content: '';
+    position : absolute;
+    z-index:10;
+    top : 0;
+    left: 0;
+    background: rgba(0,0,0,0.2)
+
+}
+ #hold video{
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left :0;
+    z-index: -1;
+    object-fit:cover;
+ }
+
+ #hold .caption{
+     position:realtive;
+     z-index : 20;
+     text-align: center;
+     color: white;
+
+ }
+
+ #hold .caption h1{
+     text-transform: uppercase;
+     font-size:1.5em;
+     font-family: 'Red Hat Display', sans-serif;
+ }
+ #hold .caption h2{
+    font-weight: 400;
+    font-size:1.5em;
+    margin:0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media screen and (min-width:992px){
+    #hold .caption h1{
+        font-size:1.5rem;
+    }
+    #hold .caption h2{
+        font-size:2rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #hold .caption h1{
+        font-size:2em;
+    }
+    #hero .caption h2{
+        font-size:2.5rem;
+    }
+}
